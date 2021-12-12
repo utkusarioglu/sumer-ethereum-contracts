@@ -1,0 +1,13 @@
+{
+  "name": "ethereum-contracts",
+  "dockerComposeFile": ["../docker-compose.dev.yml", "docker-compose.yml"],
+  "service": "ethereum-contracts",
+  "workspaceFolder": "/usr/src/app/ethereum-contracts",
+  "settings": {
+    "workbench.colorCustomizations": {
+      "activityBar.background": "#A70",
+      "activityBar.foreground": "#fff"
+    }
+  },
+  "extensions": ["tintinweb.solidity-visual-auditor", "tanzx97.solidity-lite"]
+}

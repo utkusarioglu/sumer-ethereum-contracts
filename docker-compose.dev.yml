@@ -1,0 +1,9 @@
+version: '3.9'
+
+services:
+  ethereum-contracts:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/usr/src/app/ethereum-contracts
