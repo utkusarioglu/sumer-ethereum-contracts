@@ -1,0 +1,9 @@
+{
+  "name": "sumer-ethereum-contracts",
+  "version": "1.0.0",
+  "description": "Ethereum contracts for the sumer project",
+  "main": "lib/index.js",
+  "repository": "https://github.com/utkusarioglu/sumer-ethereum-contracts.git",
+  "author": "Utku Sarioglu <utkusarioglu@hotmail.com>",
+  "license": "MIT"
+}
