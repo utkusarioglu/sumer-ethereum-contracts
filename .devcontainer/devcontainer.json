@@ -9,5 +9,6 @@
       "activityBar.foreground": "#fff"
     }
   },
-  "extensions": ["tintinweb.solidity-visual-auditor", "tanzx97.solidity-lite"]
+  "extensions": ["tintinweb.solidity-visual-auditor", "tanzx97.solidity-lite"],
+  "postCreateCommand": "scripts/post-create-command.sh"
 }
