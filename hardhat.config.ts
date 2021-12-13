@@ -47,7 +47,7 @@ const config = {
       tags: ["local"],
     },
     geth: {
-      url: "http://192.168.1.151:8545",
+      url: process.env.LOCAL_GETH_INSTANCE_URL,
       chainId: 1131745,
       accounts: envAccounts
         .groupArray("local")
