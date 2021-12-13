@@ -25,11 +25,13 @@ const envAccounts = new EnvAccounts()
 const config = {
   solidity: "0.8.4",
   paths: {
-    sources: "./contracts",
+    sources: "./src/contracts",
     tests: "./tests",
     cache: "./cache",
     artifacts: "./artifacts",
-    newStorageLayoutPath: "./artifacts/storageLayout",
+    deployments: "./artifacts/deployments",
+    deploy: "./src/deploy",
+    newStorageLayoutPath: "./artifacts/storage-layout",
   },
   settings: {
     optimizer: {

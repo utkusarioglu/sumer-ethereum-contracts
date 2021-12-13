@@ -1,9 +1,13 @@
 node_modules
 *.log
 *.env
-!example.env
-/artifacts
+! example.env
+/artifacts/build-info
+/artifacts/src
+/artifacts/storage-layout
+! /artifacts/deployments
+/artifacts/deployments/geth
+/artifacts/deployments/localhost
+/artifacts/types
 /cache
-/deployments/geth
-/deployments/localhost
 coverage
