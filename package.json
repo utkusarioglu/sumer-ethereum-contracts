@@ -6,6 +6,17 @@
   "repository": "https://github.com/utkusarioglu/sumer-ethereum-contracts.git",
   "author": "Utku Sarioglu <utkusarioglu@hotmail.com>",
   "license": "MIT",
+  "scripts": {
+    "create-types": "hardhat typechain",
+    "deploy-geth": "hardhat deploy --network geth",
+    "deploy-goerli": "hardhat deploy --network goerli",
+    "deploy-hardhat": "hardhat deploy --network hardhat",
+    "console-geth": "hardhat console --network geth",
+    "console-goerli": "hardhat console --network goerli",
+    "console-hardhat": "hardhat console --network hardhat",
+    "test": "hardhat test",
+    "build": "hardhat compile"
+  },
   "dependencies": {
     "@nomiclabs/hardhat-etherscan": "^2.1.7",
     "@openzeppelin/contracts-upgradeable": "^4.3.2",
