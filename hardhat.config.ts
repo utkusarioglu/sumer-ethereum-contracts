@@ -1,4 +1,5 @@
 require("dotenv").config();
+import "tsconfig-paths/register";
 import "hardhat-gas-reporter";
 import "@nomiclabs/hardhat-ethers";
 import "@nomiclabs/hardhat-waffle";
@@ -7,20 +8,14 @@ import "@typechain/hardhat";
 import "hardhat-spdx-license-identifier";
 import "solidity-coverage";
 import "@openzeppelin/hardhat-upgrades";
-import "./tasks/account-balances";
-import "./tasks/named-accounts";
+import "_/tasks/account-balances";
+import "_/tasks/named-accounts";
 import "hardhat-storage-layout";
 import "@nomiclabs/hardhat-etherscan";
 import "hardhat-deploy";
-import { EnvAccounts } from "env-accounts";
+import envAccounts from "_services/env-accounts/env-accounts.service";
 const { COINMARKETCAP_API_KEY, INFURA_API_KEY, ETHERSCAN_API_KEY } =
   process.env;
-
-const envAccounts = new EnvAccounts()
-  .setEnvPrefix("ACCOUNT_")
-  .setRequiredAccounts("local_deployer", "local_user1")
-  .setNetworkAlias("local", ["hardhat", "geth"])
-  .parse();
 
 const config = {
   solidity: "0.8.4",

@@ -20,6 +20,12 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedIndexedAccess": true,
     "noImplicitOverride": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "baseUrl": "./",
+    "paths": {
+      "_/*": ["./*"],
+      "_services/*": ["./src/services/*"],
+      "_tasks/*": ["tasks/*"]
+    }
   }
 }
