@@ -1,0 +1,6 @@
+FROM node:17-slim
+WORKDIR /usr/src/app
+COPY ethereum-contracts ethereum-contracts
+WORKDIR /usr/src/app/ethereum-contracts
+RUN yarn create-types
+RUN yarn build
