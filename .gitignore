@@ -6,5 +6,4 @@ node_modules
 /cache
 /deployments/geth
 /deployments/localhost
-/storageLayout
 coverage
