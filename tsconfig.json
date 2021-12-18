@@ -23,9 +23,9 @@
     "skipLibCheck": true,
     "baseUrl": "./",
     "paths": {
-      "_/*": ["./*"],
+      "_/*": ["./src*"],
       "_services/*": ["./src/services/*"],
-      "_tasks/*": ["tasks/*"]
+      "_tasks/*": ["./src/tasks/*"]
     }
   }
 }
