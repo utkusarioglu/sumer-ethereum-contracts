@@ -59,6 +59,14 @@ const config = {
           .map(({ privateKey }) => `0x${privateKey}`),
       },
     }),
+    ...(envAccounts.hasGroup("goerli") && {
+      mumbai: {
+        url: "https://rpc-mumbai.maticvigil.com",
+        accounts: envAccounts
+          .groupArray("goerli")
+          .map(({ privateKey }) => `0x${privateKey}`),
+      },
+    }),
   },
 
   namedAccounts: envAccounts.getUserNetworkProps(({ address }) => address),
