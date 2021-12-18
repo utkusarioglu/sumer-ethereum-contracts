@@ -7,13 +7,15 @@
   "author": "Utku Sarioglu <utkusarioglu@hotmail.com>",
   "license": "MIT",
   "scripts": {
-    "create-types": "hardhat typechain",
     "deploy-geth": "hardhat deploy --network geth",
-    "deploy-goerli": "hardhat deploy --network goerli",
     "deploy-hardhat": "hardhat deploy --network hardhat",
+    "deploy-goerli": "hardhat deploy --network goerli",
+    "deploy-mumbai": "hardhat deploy --network matic",
     "console-geth": "hardhat console --network geth",
-    "console-goerli": "hardhat console --network goerli",
     "console-hardhat": "hardhat console --network hardhat",
+    "console-goerli": "hardhat console --network goerli",
+    "console-mumbai": "hardhat console --network mumbai",
+    "create-types": "hardhat typechain",
     "test": "hardhat test",
     "build": "hardhat compile"
   },
