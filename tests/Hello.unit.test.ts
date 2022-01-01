@@ -20,10 +20,24 @@ describe("Hello", () => {
 
   describe("setMessage", () => {
     it("Happy", async () => {
-      const testMessage = "testMessage";
+      const testMessage = "test";
       const tx = await hello.setMessage(testMessage);
       const receipt = await tx.wait();
       expect(receipt.from).to.eq(deployer);
+    });
+
+    it("ValueTooShort error", async () => {
+      const testMessage = "a";
+      await expect(hello.setMessage(testMessage)).to.be.revertedWith(
+        "ValueTooShort()"
+      );
+    });
+
+    it("ValueTooLong error", async () => {
+      const testMessage = "This is a very long message";
+      await expect(hello.setMessage(testMessage)).to.be.revertedWith(
+        "ValueTooLong()"
+      );
     });
   });
 });
