@@ -81,6 +81,7 @@ const config = {
     runOnCompile: true,
   },
   gasReporter: {
+    token: "matic",
     enabled: !!COINMARKETCAP_API_KEY,
     coinmarketcap: COINMARKETCAP_API_KEY,
     currency: "USD",
