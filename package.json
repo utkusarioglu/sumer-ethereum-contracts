@@ -10,7 +10,7 @@
     "deploy-geth": "hardhat deploy --network geth",
     "deploy-hardhat": "hardhat deploy --network hardhat",
     "deploy-goerli": "hardhat deploy --network goerli",
-    "deploy-mumbai": "hardhat deploy --network matic",
+    "deploy-mumbai": "hardhat deploy --network mumbai",
     "console-geth": "hardhat console --network geth",
     "console-hardhat": "hardhat console --network hardhat",
     "console-goerli": "hardhat console --network goerli",
